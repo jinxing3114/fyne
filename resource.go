@@ -39,11 +39,7 @@ func (r *StaticResource) Content() []byte {
 	return r.StaticContent
 }
 
-
-// NewStaticResource returns a new static resource object with the specified
-// name and content. Creating a new static resource in memory results in
-// sharable binary data that may be serialised to the location returned by
-// CachePath().
+// Set up embedded file resources
 func SetEmbedResource(list embed.FS) {
 	embedRes = list
 }
